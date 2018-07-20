@@ -21,8 +21,6 @@ public class Main {
         int appAgeTimesTwo;
         int userAge;
         int ageDifference;
-        int temp;
-
 
         LocalTime timeOfDay = LocalTime.now();
 
@@ -30,7 +28,6 @@ public class Main {
         final LocalTime AFTER_NOON = LocalTime.of(12,0,0);
         final LocalTime EVENING = LocalTime.of(16,0,0);
         final LocalTime NIGHT = LocalTime.of(21,0,0);
-
 
         System.out.print("What is your name? ");
         userName = input.next();
@@ -57,19 +54,12 @@ public class Main {
 
         System.out.println(greeting + " " + userName.substring(0,1).toUpperCase() + userName.substring(1) );
 
-
-
         System.out.print(userName.substring(0,1).toUpperCase() + userName.substring(1) + ", " + "how old are you? \n");
         userAge = input.nextInt();
 
-
-
         Random randomNumber = new Random();
 
-
         int appAge = randomNumber.nextInt((90 - 18) + 18 );
-
-        System.out.println(appAge);
 
         if (appAge > userAge) {
 
@@ -81,10 +71,6 @@ public class Main {
             ageDifference = userAge - appAge;
 
         }
-
-
-
-
 
         if (appAge == userAge){
 
