@@ -69,6 +69,8 @@ public class Main {
 
         int appAge = randomNumber.nextInt((90 - 18) + 18 );
 
+        System.out.println(appAge);
+
         if (appAge > userAge) {
 
             ageDifference = appAge - userAge;
